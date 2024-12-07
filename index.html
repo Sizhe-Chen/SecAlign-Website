@@ -310,6 +310,30 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Experiments -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Related Work</h2>
+        <div class="content has-text-justified">
+          <p>
+            Prompting-based defenses such as “Sandwich” only modify the inference procedure and thus are weak in defenses. The current SOTA defense StruQ, which fine-tunes the LLM with
+            injected samples to teach the model how to respond in a desirable manner, has limited success. In contrast, SecAlign both aligns
+            the LLM towards the desirable output (see the yellow box) and away from the undesirable output (see the red box) under prompt
+            injections. Under the strongest GCG-based prompt injections, our SecAlign Mistral-7B achieves a significantly reduced 1%
+            attack success rate. An injected instruction could be dependent (as this example) or agnostic (as in our training/testing) to the
+            benign instruction.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/fig1_v5.png" width="100%"/>
+        </div>
+    </div>
+    <!--/ Experiments -->
+  </div>
+</section>
+
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <div class="columns is-centered has-text-centered"><h2 class="title">BibTeX</h2></div>
