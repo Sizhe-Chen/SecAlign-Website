@@ -249,26 +249,19 @@
         </div>
         <div class="content has-text-justified">
           <p>
-            StruQ separates the prompt and data by delimiters that can only be used by the system designer.
-          </p>
-          <p>
-            The secure-front-end reserves special tokens ([MARK], ...) as delimiters, and filters the data out of any separation delimiter.
+            SecAlign uses standard Direct Preference Optimization loss to fine-tune on the secure preference dataset.
           </p>
         </div>
         <div class="content has-text-centered">
-          <img src="./static/images/fig4.png" width="100%"/>
+          <img src="./static/images/dpo.png" width="50%"/>
         </div>
-        <h3 class="title is-4">Structured Instruction-Tuned LLM</h3>
         <div class="content has-text-justified">
           <p>
-            StruQ simulates prompt injections in training for the LLM to learn to ignore any injected instructions in the data part.
+            SecAlign trains on simulated injected inputs, labelled with both and desirable responses and undesirable responses, leading to much larger probability gap between outputting them, and thus better robustness against prompt injection attacks.
           </p>
-          <p>
-            The generated dataset contains clean samples and samples with injected instructions (also sampled from the dataset).
-          </p>
-          <p>
-            We fine-tune the LLM on our structured instruction-tuning dataset using standard SFT algorithm.
-          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/motivation.png" width="100%"/>
         </div>
       </div>
     </div>
