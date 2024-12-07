@@ -1,6 +1,6 @@
 # Project
 
-This is the repository that contains source code for the [SecAlign website](https://sizhe-chen.github.io/SecAlign-Website) for the paper [StruQ: Defending Against Prompt Injection with Structured Queries](https://arxiv.org/pdf/2410.05451).
+This is the repository that contains source code for the [SecAlign website](https://sizhe-chen.github.io/SecAlign-Website) for the paper [Aligning LLMs to Be Robust Against Prompt Injection](https://arxiv.org/pdf/2410.05451).
 
 If you find this project useful for your work please cite:
 ```
