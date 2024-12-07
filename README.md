@@ -1,14 +1,15 @@
 # Project
 
-This is the repository that contains source code for the [StruQ website](https://sizhe-chen.github.io/StruQ-Website) for the USENIX Security'25 paper [StruQ: Defending Against Prompt Injection with Structured Queries](https://arxiv.org/pdf/2402.06363).
+This is the repository that contains source code for the [SecAlign website](https://sizhe-chen.github.io/SecAlign-Website) for the paper [StruQ: Defending Against Prompt Injection with Structured Queries](https://arxiv.org/pdf/2410.05451).
 
 If you find this project useful for your work please cite:
 ```
-@inproceedings{chen2024struq,
-  title={StruQ: Defending against prompt injection with structured queries},
-  author={Chen, Sizhe and Piet, Julien and Sitawarin, Chawin and Wagner, David},
-  booktitle={USENIX Security Symposium},
-  year={2025}
+@article{chen2024aligning,
+  title={Aligning LLMs to Be Robust Against Prompt Injection},
+  author={Chen, Sizhe and Zharmagambetov, Arman and Mahloujifar, Saeed and Chaudhuri, Kamalika and Guo, Chuan},
+  journal={arXiv preprint arXiv:2410.05451},
+  year={2024}
+}
 ```
 
 # Website License
