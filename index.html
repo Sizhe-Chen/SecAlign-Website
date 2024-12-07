@@ -160,10 +160,10 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recent advances in Large Language Models (LLMs) enable exciting LLM-integrated applications, which perform text-based tasks by utilizing their advanced language capabilities. However, as LLMs have improved, so have the attacks against them. Prompt injection attack is listed as the #1 threat to LLM-integrated applications, where an LLM input contains a trusted prompt (instruction) and an untrusted data (user documents, web retrieval, results from API calls, etc) with potentially injected instructions (Ignore previous instructions and …) to arbitrarily manipulate the LLM.
+            Recent advances in Large Language Models (LLMs) enable exciting LLM-integrated applications, which perform text-based tasks by utilizing their advanced language capabilities. However, as LLMs have improved, so have the attacks against them. <a href="https://www.ibm.com/topics/prompt-injection">Prompt injection attack</a> is listed as the <a href="https://owasp.org/www-project-top-10-for-large-language-model-applications">#1 threat</a> to LLM-integrated applications, where an LLM input contains a trusted prompt (instruction) and an untrusted data (user documents, web retrieval, results from API calls, etc) with potentially injected instructions (Ignore previous instructions and …) to arbitrarily manipulate the LLM.
           </p>
           <p>
-            To this end, we show that alignment can be a powerful tool to make LLMs more robust against prompt injection. Our method— SecAlign—first builds an alignment dataset by simulating prompt injection attacks and constructing pairs of desirable and undesirable responses. Then, we apply existing alignment techniques to fine-tune the LLM to be robust against these simulated attacks. Our experiments show that SecAlign robustifies the LLM substantially with a negligible hurt on model utility. Moreover, SecAlign’s protection generalizes to strong attacks unseen in training. Specifically, the success rate of state-of-the-art GCG-based prompt injections drops from 41% to 1% in Mistral-7B after SecAlign
+            To this end, we show that alignment can be a powerful tool to make LLMs more robust against prompt injection. Our method— SecAlign—first builds an alignment dataset by simulating prompt injection attacks and constructing pairs of desirable and undesirable responses. Then, we apply existing alignment techniques to fine-tune the LLM to be robust against these simulated attacks. Our experiments show that SecAlign robustifies the LLM substantially with a negligible hurt on model utility. Moreover, SecAlign’s protection generalizes to strong attacks unseen in training. Specifically, the success rate of state-of-the-art GCG-based prompt injections drops from 41% to 1% in Mistral-7B after SecAlign.
           </p>
         </div>
       </div>
@@ -203,7 +203,7 @@
             The adversary injects an instruction in data to override the prompted instruction.
           </p>
           <p>
-            Listed as the #1 security threat for LLM-integrated  applications by OWASP.
+            Listed as the #1 security threat for LLM-integrated applications by OWASP.
           </p>
           <p>
             Example: A university wants to evaluate applicants’ CV with an LLM.
