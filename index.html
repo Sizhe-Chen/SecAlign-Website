@@ -227,7 +227,7 @@
         <h2 class="title is-3">Secure Alignment (SecAlign)</h2>
         <div class="content has-text-justified">
           <p>
-            SecAlign specially constructs a security preference dataset and fine-tunes with existing alignment training.
+            SecAlign constructs a security preference dataset and fine-tunes with existing alignment training.
           </p>
           <p>
             For each sample s in the supervised fine-tuning dataset
@@ -235,13 +235,13 @@
           <p>
             &#x2022; Sample another random sample s’ for simulating injection
           <p>
-            &#x2022; LLM input: prompt-injected s with the instruction in s’
+            &#x2022; **LLM input**: prompt-injected s with the instruction in s’
           </p>
           <p>
-            &#x2022; Desirable LLM output: the labelled output of s
+            &#x2022; **Desirable LLM output**: the labelled output of s
           </p>
           <p>
-            &#x2022; Undesirable LLM output: the labelled output of s’
+            &#x2022; **Undesirable LLM output**: the labelled output of s’
           </p>
         </div>
         <div class="content has-text-centered">
@@ -253,7 +253,7 @@
           </p>
         </div>
         <div class="content has-text-centered">
-          <img src="./static/images/dpo.png" width="100%"/>
+          <img src="./static/images/dpo.png" width="75%"/>
         </div>
         <div class="content has-text-justified">
           <p>
@@ -292,20 +292,18 @@
 
         <div class="content has-text-justified">
           <p>
-            SecAlign significantly surpasses existing promptingbased and fine-tuning-based defense baselines.
+            SecAlign significantly surpasses existing promptingbased and fine-tuning-based defense baselines (left).
           </p>
         </div>
-      <div class="content has-text-centered">
-          <img src="./static/images/baseline.png" width="100%"/>
-      </div>
 
       <div class="content has-text-justified">
           <p>
-            SecAlign LLM is much harder to attack: in the end, the attack loss is still higher than that at the start of StruQ.
+            SecAlign LLM is much harder to attack: in the end, the attack loss is still higher than that at the start of StruQ (right).
           </p>
       </div>
         <div class="content has-text-centered">
-          <img src="./static/images/gcg.png" width="100%"/>
+          <img src="./static/images/baseline.png" width="45%"/>
+          <img src="./static/images/gcg.png" width="45%"/>
         </div>
     </div>
     <!--/ Experiments -->
