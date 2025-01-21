@@ -241,7 +241,11 @@
         <h2 class="title is-3">Secure Alignment (SecAlign)</h2>
         <div class="content has-text-justified">
           <p>
-            SecAlign constructs a new preference dataset for secure preference optimization.
+            (1) Get an SFT model by downloading a public instruct model (recommended) or SFTing a base model.
+            (2) Save the model’s delimiters.
+            (3) Find a public instruction tuning dataset.
+            (4) Construct the preference dataset from the instruction tuning dataset.
+            (5) Preference-optimize the SFT model on the preference dataset.
           </p>
           <p>
             For each sample s in the supervised fine-tuning dataset
