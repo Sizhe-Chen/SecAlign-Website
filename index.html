@@ -145,7 +145,7 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <br> SecAlign formulates prompt injection defense as preference optimization, reducing the success rate of optimization-based attacks by a factor of >4 from the SOTA StruQ while preserving model utility.
+              <br> SecAlign formulates prompt injection defense as preference optimization, reducing the success rate of strong optimization-based attacks to around 0% while preserving model utility.
             </span>
           </div>
           </div>
@@ -241,7 +241,7 @@
         <h2 class="title is-3">Secure Alignment (SecAlign)</h2>
         <div class="content has-text-justified">
           <p>
-            SecAlign constructs a security preference dataset and fine-tunes with existing alignment methods.
+            SecAlign constructs a new preference dataset for secure preference optimization.
           </p>
           <p>
             For each sample s in the supervised fine-tuning dataset
@@ -259,7 +259,7 @@
           </p>
         </div>
         <div class="content has-text-centered">
-          <img src="./static/images/secalign.png" width="75%"/>
+          <img src="./static/images/teaser.png" width="75%"/>
         </div>
         <div class="content has-text-justified">
           <p>
@@ -301,7 +301,7 @@
           </p>
         </div>
         <div class="content has-text-centered">
-          <img src="./static/images/main_figure.png" width="100%"/>
+          <img src="./static/images/main_instruct_intro.png" width="100%"/>
         </div>
 
         <div class="content has-text-justified">
@@ -324,27 +324,7 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Related Work -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Work</h2>
-        <div class="content has-text-justified">
-          <p>
-            Prompting-based defenses such as “Sandwich” only modify the inference procedure and thus are weak in defenses. The current SOTA defense StruQ, which fine-tunes the LLM with
-            injected samples to teach the model how to respond in a desirable manner, has limited success. In contrast, SecAlign both aligns
-            the LLM towards the desirable output (see the yellow box) and away from the undesirable output (see the red box) under prompt
-            injections.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <img src="./static/images/fig1_v5.png" width="100%"/>
-        </div>
-    </div>
-    <!--/ Related Work -->
-  </div>
-</section>
+
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
