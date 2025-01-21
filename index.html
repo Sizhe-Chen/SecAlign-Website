@@ -242,13 +242,15 @@
         <div class="content has-text-justified">
           <p>
             (1) Get an SFT model by downloading a public instruct model (recommended) or SFTing a base model.
-            (2) Save the model’s delimiters.
-            (3) Find a public instruction tuning dataset.
-            (4) Construct the preference dataset from the instruction tuning dataset.
-            (5) Preference-optimize the SFT model on the preference dataset.
           </p>
           <p>
-            For each sample s in the supervised fine-tuning dataset
+            (2) Save the model’s delimiters.
+          </p>
+          <p>
+            (3) Find a public instruction tuning dataset.
+          </p>
+          <p>
+            (4) Construct the preference dataset. For each sample s in the instruction tuning dataset
           </p>
           <p>
             &#x2022; Sample another random sample s’ for simulating injection
@@ -267,7 +269,7 @@
         </div>
         <div class="content has-text-justified">
           <p>
-            SecAlign uses Direct Preference Optimization loss to fine-tune on the secure preference dataset.
+            (5) Preference-optimize the SFT model on the preference dataset. SecAlign uses Direct Preference Optimization loss.
           </p>
         </div>
         <div class="content has-text-centered">
