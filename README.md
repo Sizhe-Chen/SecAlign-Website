@@ -1,12 +1,12 @@
 # Project
 
-This is the repository that contains source code for the [SecAlign website](https://sizhe-chen.github.io/SecAlign-Website) for the paper [Aligning LLMs to Be Robust Against Prompt Injection](https://arxiv.org/pdf/2410.05451).
+This is the repository that contains source code for the [SecAlign website](https://sizhe-chen.github.io/SecAlign-Website) for the paper [SecAlign: Defending Against Prompt Injection with Preference Optimization](https://arxiv.org/pdf/2410.05451).
 
 If you find this project useful for your work please cite:
 ```
 @article{chen2024aligning,
-  title={Aligning LLMs to Be Robust Against Prompt Injection},
-  author={Chen, Sizhe and Zharmagambetov, Arman and Mahloujifar, Saeed and Chaudhuri, Kamalika and Guo, Chuan},
+  title={SecAlign: Defending Against Prompt Injection with Preference Optimization},
+  author={Chen, Sizhe and Zharmagambetov, Arman and Mahloujifar, Saeed and Chaudhuri, Kamalika and Wagner, David and Guo, Chuan},
   journal={arXiv preprint arXiv:2410.05451},
   year={2024}
 }
