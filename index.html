@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Aligning LLMs to Be Robust Against Prompt Injection">
+        content="SecAlign: Defending Against Prompt Injection with Preference Optimization">
   <meta name="keywords" content="AI security, prompt injection defense, LLM-integrated applications">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aligning LLMs to Be Robust Against Prompt Injection</title>
+  <title>SecAlign: Defending Against Prompt Injection with Preference Optimization</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -74,7 +74,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Aligning LLMs to Be Robust Against Prompt Injection</h1>
+          <h1 class="title is-1 publication-title">SecAlign: Defending Against Prompt Injection with Preference Optimization</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://sizhe-chen.github.io">Sizhe Chen</a><sup>1,2</sup>,</span>
@@ -85,6 +85,9 @@
             </span>
             <span class="author-block">
               <a href="https://cseweb.ucsd.edu/~kamalika">Kamalika Chaudhuri</a><sup>1</sup>,
+            </span>
+             <span class="author-block">
+              <a href="https://people.eecs.berkeley.edu/~daw">David Wagner</a><sup>2</sup>
             </span>
             <span class="author-block">
               <a href="https://sites.google.com/view/chuanguo">Chuan Guo</a><sup>1</sup>
@@ -163,7 +166,18 @@
             Recent advances in Large Language Models (LLMs) enable exciting LLM-integrated applications, which perform text-based tasks by utilizing their advanced language capabilities. However, as LLMs have improved, so have the attacks against them. <a href="https://www.ibm.com/topics/prompt-injection">Prompt injection attack</a> is listed as the <a href="https://owasp.org/www-project-top-10-for-large-language-model-applications">#1 threat</a> to LLM-integrated applications, where an LLM input contains a trusted prompt (instruction) and an untrusted data (user documents, web retrieval, results from API calls, etc) with potentially injected instructions (Ignore previous instructions and …) to arbitrarily manipulate the LLM.
           </p>
           <p>
-            To this end, we show that alignment can be a powerful tool to make LLMs more robust against prompt injection. Our method— SecAlign—first builds an alignment dataset by simulating prompt injection attacks and constructing pairs of desirable and undesirable responses. Then, we apply existing alignment techniques to fine-tune the LLM to be robust against these simulated attacks. Our experiments show that SecAlign robustifies the LLM substantially with a negligible hurt on model utility. Moreover, SecAlign’s protection generalizes to strong attacks unseen in training. Specifically, the success rate of state-of-the-art GCG-based prompt injections drops from 41% to 1% in Mistral-7B after SecAlign.
+            To mitigate this vulnerability, we propose a new defense called
+            SecAlign based on the technique of preference optimization. Our
+            defense first constructs a preference dataset with prompt-injected
+            inputs, secure outputs (ones that respond to the legitimate instruction), and insecure outputs (ones that respond to the injection).
+            We then perform preference optimization on this dataset to teach
+            the LLM to prefer the secure output over the insecure one. This
+            provides the first known method that reduces the success rates of
+            various prompt injections to around 0%, even against attacks much
+            more sophisticated than ones seen during training. This indicates
+            our defense generalizes well against unknown and yet-to-come
+            attacks. Also, our defended models are still practical with similar
+            utility to the one before our defensive training
           </p>
         </div>
       </div>
@@ -338,8 +352,8 @@
     <div class="columns is-centered">
       <div class="column is-full-width">
     <pre><code>@article{chen2024aligning,
-  title={Aligning LLMs to Be Robust Against Prompt Injection},
-  author={Chen, Sizhe and Zharmagambetov, Arman and Mahloujifar, Saeed and Chaudhuri, Kamalika and Guo, Chuan},
+  title={SecAlign: Defending Against Prompt Injection with Preference Optimization},
+  author={Chen, Sizhe and Zharmagambetov, Arman and Mahloujifar, Saeed and Chaudhuri, Kamalika and Wagner, David and Guo, Chuan},
   journal={arXiv preprint arXiv:2410.05451},
   year={2024}
 }</code></pre>
