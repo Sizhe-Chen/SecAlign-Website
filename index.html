@@ -145,7 +145,7 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <br> SecAlign formulates prompt injection defense as preference optimization, reducing the success rate of strong optimization-based attacks to around 0% while preserving model utility.
+              <br> SecAlign formulates prompt injection defense as preference optimization, reducing the success rate of the strongest tested attacks to around 0% while preserving model utility.
             </span>
           </div>
           </div>
@@ -177,7 +177,7 @@
             more sophisticated than ones seen during training. This indicates
             our defense generalizes well against unknown and yet-to-come
             attacks. Also, our defended models are still practical with similar
-            utility to the one before our defensive training
+            utility to the one before our defensive training.
           </p>
         </div>
       </div>
@@ -291,33 +291,17 @@
         <h2 class="title is-3">Experiments</h2>
         <div class="content has-text-justified">
           <p>
-            SecAlign LLMs maintain general-purpose utility (AlpacaEval2 WinRate).
+            SecAlign Llama3-8B-Instruct maintains general-purpose utility (AlpacaEval2 WinRate).
           </p>
           <p>
-            SecAlign enjoys 0% attack success rates under optimization-free attacks (Max ASR Opt.-Free). 
+            SecAlign Llama3-8B-Instruct enjoys 1% attack success rates under the strongest tested optimization-free prompt injections. 
           </p>
-          <p>
-            SecAlign significantly reduces the success rates of optimization-based attacks (Max ASR Opt.-Based) by a factor of >4 from the current SOTA StruQ to <15%.
+           <p>
+            SecAlign significantly surpasses existing prompting-based and fine-tuning-based defenses.
           </p>
         </div>
         <div class="content has-text-centered">
-          <img src="./static/images/main_instruct_intro.png" width="100%"/>
-        </div>
-
-        <div class="content has-text-justified">
-          <p>
-            SecAlign significantly surpasses existing prompting-based and fine-tuning-based defenses (left).
-          </p>
-        </div>
-
-      <div class="content has-text-justified">
-          <p>
-            SecAlign LLM is much harder to attack: see a significantly higher attack loss than StruQ (right).
-          </p>
-      </div>
-        <div class="content has-text-centered">
-          <img src="./static/images/baseline.png" width="53%"/>
-          <img src="./static/images/gcg.png" width="46%"/>
+          <img src="./static/images/main_instruct_intro.png" width="75%"/>
         </div>
     </div>
     <!--/ Experiments -->
