@@ -4,11 +4,11 @@ This is the repository that contains source code for the [SecAlign website](http
 
 If you find this project useful for your work please cite:
 ```
-@article{chen2024aligning,
+@inproceedings{chen2025secalign,
   title={SecAlign: Defending Against Prompt Injection with Preference Optimization},
   author={Chen, Sizhe and Zharmagambetov, Arman and Mahloujifar, Saeed and Chaudhuri, Kamalika and Wagner, David and Guo, Chuan},
-  journal={arXiv preprint arXiv:2410.05451},
-  year={2024}
+  booktitle={The ACM Conference on Computer and Communications Security (CCS)},
+  year={2025}
 }
 ```
 
