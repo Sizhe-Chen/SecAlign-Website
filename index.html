@@ -167,7 +167,7 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <br> SecAlign formulates prompt injection defense as preference optimization, reducing the success rate of the strongest tested attacks to around 0% while preserving model utility.
+              <br> SecAlign formulates prompt injection defense as preference optimization, reducing the success rates by a factor of >4 from the previous SOTA StruQ without non-trivial utility loss.
             </span>
           </div>
           </div>
@@ -195,7 +195,7 @@
             We then perform preference optimization on this dataset to teach
             the LLM to prefer the secure output over the insecure one. This
             provides the first known method that reduces the success rates of
-            various prompt injections to around 0%, even against attacks much
+            various prompt injections to less than 10%, even against attacks much
             more sophisticated than ones seen during training. This indicates
             our defense generalizes well against unknown and yet-to-come
             attacks. Also, our defended models are still practical with similar
@@ -322,7 +322,7 @@
             SecAlign Llama3-8B-Instruct maintains general-purpose utility (AlpacaEval2 WinRate).
           </p>
           <p>
-            SecAlign Llama3-8B-Instruct enjoys 1% attack success rates under the strongest tested optimization-based prompt injections. 
+            SecAlign Llama3-8B-Instruct enjoys 8% attack success rates under the strongest tested optimization-based prompt injections. 
           </p>
            <p>
             SecAlign significantly surpasses existing prompting-based and fine-tuning-based defenses.
@@ -343,11 +343,11 @@
     <div class="columns is-centered has-text-centered"><h2 class="title">BibTeX</h2></div>
     <div class="columns is-centered">
       <div class="column is-full-width">
-    <pre><code>@article{chen2024aligning,
+    <pre><code>@inproceedings{chen2025secalign,
   title={SecAlign: Defending Against Prompt Injection with Preference Optimization},
   author={Chen, Sizhe and Zharmagambetov, Arman and Mahloujifar, Saeed and Chaudhuri, Kamalika and Wagner, David and Guo, Chuan},
-  journal={arXiv preprint arXiv:2410.05451},
-  year={2024}
+  booktitle={The ACM Conference on Computer and Communications Security (CCS)},
+  year={2025}
 }</code></pre>
     </div>
     </div>
